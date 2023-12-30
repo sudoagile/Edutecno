@@ -1,0 +1,54 @@
+/* styles.css */
+#app {
+    text-align: center;
+    padding: 20px;
+}
+
+#presupuesto-form, #gastos-form {
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.delete-button {
+    cursor: pointer;
+}
+
+/* Estilo personalizado para los botones con sombras y efecto de hover */
+.custom-btn {
+    background-color: #ffc107; /* Cambiar a amarillo (#ffc107) */
+    color: #000; /* Cambiar a texto negro (#000) */
+    border: none; /* Sin borde */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Efecto de transformación y cambio de color al pasar el mouse */
+    margin-bottom: 20px; /* Aumentar el margen inferior para separar más los botones */
+}
+
+.custom-btn:hover {
+    background-color: #e0a800; /* Cambiar a un tono más oscuro de amarillo (#e0a800) al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}

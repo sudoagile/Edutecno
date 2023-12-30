@@ -1,0 +1,43 @@
+.pokemonesSecundarios .card{
+    position: relative;
+}
+
+.tituloCard::before {
+    content: "";
+    position:absolute;
+    top:26px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#pokemonesPrincipales .tituloCard::before {
+    background-color: green;
+}
+
+#pokemonesSecundarios .tituloCard::before {
+    background-color: orange;
+}
+
+#pokemonesPrincipales .card:hover, #pokemonesSecundarios .card:hover {
+    opacity:0.7;
+}
+
+main{
+    min-height: 80vh;
+}
+
+
+#listaStats{
+    font-size: 1.5rem;
+}
+
+
+.modal-dialog {
+    max-width: 800px;
+}

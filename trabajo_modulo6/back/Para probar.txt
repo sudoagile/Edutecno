@@ -1,0 +1,32 @@
+2. Realiza Pruebas con Postman o curl
+
+Con Postman:
+
+Para listar todos los animes: Haz una petición GET a http://localhost:3000/anime.
+Para buscar un anime por ID: Haz una petición GET a http://localhost:3000/anime?id=1 (reemplaza 1 con el ID real).
+Para buscar un anime por nombre: Haz una petición GET a http://localhost:3000/anime?nombre=Akira (reemplaza Akira con el nombre real).
+Con curl:
+
+Para listar todos los animes:
+
+bash
+Copy code
+curl http://localhost:3000/anime
+Para buscar un anime por ID:
+
+
+curl http://localhost:3000/anime?id=1
+Para buscar un anime por nombre:
+
+
+curl http://localhost:3000/anime?nombre=Akira
+
+
+
+3. Prueba las Funciones de Modificación
+
+Para probar las funciones de crear, actualizar y eliminar, puedes hacer lo siguiente:
+
+Para añadir un nuevo anime, haz una petición POST a http://localhost:3000/anime con un cuerpo JSON que contenga los datos del anime.
+Para actualizar un anime, haz una petición PUT a http://localhost:3000/anime/1 (reemplaza 1 con el ID real) con un cuerpo JSON que contenga los datos actualizados.
+Para eliminar un anime, haz una petición DELETE a http://localhost:3000/anime/1 (reemplaza 1 con el ID real).

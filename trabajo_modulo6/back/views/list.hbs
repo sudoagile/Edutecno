@@ -1,0 +1,26 @@
+{{!< layout}}
+
+<div class="container mt-5">
+  <h2>Lista de Animes</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Autor</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each animes}}
+      <tr>
+        <td>{{this.nombre}}</td>
+        <td>{{this.autor}}</td>
+        <td>
+          <a href="/anime/update/{{this.id}}" class="btn btn-sm btn-info">Editar</a>
+          <a href="/anime/delete/{{this.id}}" class="btn btn-sm btn-danger">Eliminar</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

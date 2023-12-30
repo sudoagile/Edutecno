@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digidex View</title>
+    <link rel="stylesheet" href="./digidex.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Origen de los Digimones</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Digidex View</h1>
+    <div class="digidex">
+        <div class="digiPhoto">
+            <img src="./digimon.png" alt="digimon" id="digiImg" class="image">
+        </div>
+        <div class="digiInfo">
+            <input type="text" placeholder="escribir nombre del digimon" id="digiName" name="digiName">
+            <button onclick="fetchDigimon()">Buscar digimon</button>
+            <div class="digiScreen" id="level"></div>
+            <button id="toggleButton">Mostrar/Ocultar Lista</button>
+        </div>
+        <div class="digiList" id="digiList">
+            <h2>Lista de Digimons</h2>
+            <ul id="digiNamesList"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Digidex View</p>
+    </footer>
+
+    <script src="./digidex.js"></script>
+</body>
+</html>

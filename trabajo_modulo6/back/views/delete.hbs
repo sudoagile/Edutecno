@@ -1,0 +1,11 @@
+{{!< layout}}
+
+<div class="container mt-5">
+  <h2>Eliminar Anime</h2>
+  <form action="/anime/{{anime.id}}?_method=DELETE" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <p>¿Estás seguro de que quieres eliminar el anime "{{anime.nombre}}"?</p>
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a href="/" class="btn btn-secondary">Cancelar</a>
+  </form>
+</div>

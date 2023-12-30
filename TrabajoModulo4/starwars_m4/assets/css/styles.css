@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform .2s ease-in-out;
+    margin-bottom: 37.8px; /* Añadido para separar las secciones */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+}
+
+.card-body {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@keyframes neonSign {
+    0%, 100% {
+        transform: translateX(-100%);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+
+.star-wars-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #ffe81f;
+    text-align: center;
+    padding: 40px 0;
+    background-color: #000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    perspective: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.container.mt-5 {
+    margin-top: 5rem !important;
+}
+
+.star-wars-title span {
+    display: inline-block;
+    animation: neonSign 20s infinite;
+}
+
+
