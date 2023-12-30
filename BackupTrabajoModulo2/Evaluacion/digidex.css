@@ -1,0 +1,32 @@
+.digidex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    width: 400px;
+    height: 200px;
+}
+
+.image{
+    width:  100px;
+}
+
+.digiPhoto{
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    max-width: 150px;
+}
+.digiInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.digiScreen{
+    background-color: gray;
+    color:  aqua;
+    width: 150px;
+    height: 100px;
+    font-size: 12;
+}
